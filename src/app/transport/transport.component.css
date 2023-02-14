@@ -1,0 +1,39 @@
+.buttons {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.buttons button {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.buttons button:hover {
+    background-color: #eee;
+    box-shadow: 0 0 5px #ccc;
+}
+.buttons button:active {
+    background-color: #ddd;
+    box-shadow: 0 0 5px #ccc;
+}
+#panel {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    min-height: 400px;
+}
+.transport-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.transport-info img {
+    max-width: 500px;
+    max-height: 500px;
+}

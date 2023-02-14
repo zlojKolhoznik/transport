@@ -1,0 +1,20 @@
+<div class="wrapper">
+  <div id="panel">
+    <div class="transport-info" *ngIf="selectedTransport !== null">
+      <img
+        src="{{ selectedTransport.image }}"
+        alt="{{ selectedTransport.name }}"
+      />
+      <h1>{{ selectedTransport.name | titlecase }}</h1>
+      <p>{{ selectedTransport.description }}</p>
+    </div>
+  </div>
+  <div class="buttons">
+    <button
+      *ngFor="let transport of transports"
+      (click)="selectedTransport = transport;"
+    >
+      {{ transport.type | titlecase }}
+    </button>
+  </div>
+</div>
